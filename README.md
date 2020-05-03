@@ -37,5 +37,5 @@
 # The model is capable of learning these mappings as seen in the experiment in the MNIST folder, but this is not dynamic training -- the model is forced to learn task 0 on context 0, task 1 on context 1, etc.
 
 # 
-# Examples of desired graphs at the end of these experiments can be seen here...
+# Examples of desired graphs at the end of these experiments can be seen in the Graphs folder
 
