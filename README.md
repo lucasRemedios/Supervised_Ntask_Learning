@@ -39,3 +39,24 @@
 # 
 # Examples of desired graphs at the end of these experiments can be seen in the Graphs folder
 
+#
+# Picture / Math to help understand training algorithm ie the train() function in logic_gate_experiment.ipynb can be found in Algo folder.
+#### The variable names are mostly abbreviations of names from the code. ex. ael -> avg_epoch_loss etc.
+#### **** Mainly this is very useful for understanding the control flow of the train() function
+
+
+#
+# # *** Where might errors lie?
+- maybe in the diff_errs and moving_avg_context_loss
+    - this is a kind of thresholding system, which may work for training but not work for testing
+    - potentially, with the existing code, if the model was trained better, it could be overfit to each of the 8 tasks which would hopefully allow it to switch faster and stay on the correct context
+    
+- maybe an issue with sharing or not sharing global variables between training and testing (ex: diff_errs, moving_avg_context_loss, etc.)
+    - these maybe could be thought of as "learned weights" and are getting shared incorrectly or reset etc before testing.
+    
+- maybe the model needs to be trained better
+
+- maybe there is a better way to trigger task switching and perseverating
+   
+- maybe testing was implemented incorrectly
+
