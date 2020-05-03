@@ -15,7 +15,7 @@ class Context(Layer):
 
   
   def __init__(self, num_hrrs, context_on=0, hardcoded_contexts=False):
-    print("init called")
+    #print("init called")
     super(Context, self).__init__()
     
     self.num_hrrs = num_hrrs
@@ -79,7 +79,7 @@ class Context(Layer):
 #------------------------------------------------------------------------------------------------------------------
 
   def build(self, input_shape):
-    print("build called")
+    #print("build called")
     
     #*******************************************************************************
     def hrr(length, normalized=True):
@@ -129,7 +129,7 @@ class Context(Layer):
     #***********************************************************
     if self.hardcoded_contexts == True:
       
-      print("hardcoed_contexts=True")
+      #print("hardcoed_contexts=True")
     
       # create hardcoded untrainable weights ie. hrr placeholders for debugging
       # If input_shape[-1] = 2
@@ -151,7 +151,7 @@ class Context(Layer):
     #***********************************************************
     else:
       
-      print("hardcoed_contexts=False")
+      #print("hardcoed_contexts=False")
 
       def init_hrrs(shape, dtype=None):
         x = hrrs(input_shape[-1], n=self.num_hrrs)
