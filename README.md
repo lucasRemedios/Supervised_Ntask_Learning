@@ -32,7 +32,8 @@
 ### 3) Dynamic testing (fails--something is wrong with when contexts are switched)
 
 #
-# Once the logic gate experiment can perform A. the experiment should be repeated with n mnist task variants (ex: is it odd, is it even, div by 3, div by 5, etc)
+# Once the logic gate experiment can perform the steps listed in section A. 
+#### the experiment should be repeated with n mnist task variants (ex: is it odd, is it even, div by 3, div by 5, etc)
 # The model is capable of learning these mappings as seen in the experiment in the MNIST folder, but this is not dynamic training -- the model is forced to learn task 0 on context 0, task 1 on context 1, etc.
 
 # 
