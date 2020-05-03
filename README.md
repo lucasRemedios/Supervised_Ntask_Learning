@@ -1,8 +1,6 @@
 # Supervised_Ntask_Learning 
-#
 
 # There are 2 significant files:
-#
 # 1. Context_Layer.py : 
   #### Contains the Ntask Keras layer
 #
