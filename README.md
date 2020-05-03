@@ -41,6 +41,8 @@
 
 #
 # Picture / Math to help understand training algorithm ie the train() function in logic_gate_experiment.ipynb can be found in Algo folder.
+#### The variable names are mostly abbreviations of names from the code. ex. ael -> avg_epoch_loss etc.
+#### **** Mainly this is very useful for understanding the control flow of the train() function
 
 
 #
