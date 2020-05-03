@@ -1,4 +1,8 @@
 # Supervised_Ntask_Learning 
+#
+# Motivation:
+#### Humans can perform multiple tasks on the fly. When an approach doesn't succeed, the human can switch its approach, or context that it is looking at the task with, on the fly, to attempt to successfully complete the task. We want to match this type of behavior with a neural network. A model should be able to switch its context on the fly while training and testing, where tasks are randomly cycled through and given to the model.
+
 
 # There are 2 significant files:
 # 1. Context_Layer.py : 
