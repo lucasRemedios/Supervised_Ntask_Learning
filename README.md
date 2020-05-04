@@ -1,6 +1,7 @@
 # Supervised_Ntask_Learning 
-### The primary contribution is the NTask Keras layer in Context_Layer.py which allows easy implementation of Ntask learning.
-#
+### The primary contribution of this work is the custom Keras Ntask layer in Context_Layer.py which allows easy implementation of Ntask learning.
+### The secondary contribution of this work is the dynamic training algorithm/code for supervised Ntask learning with the Keras Ntask layer.
+### The tertiary contribution of this work is the incomplete dynamic testing algorithm/code for supervised Ntask learning with the Keras Ntask layer.
 
 # Motivation:
 #### Humans can perform multiple tasks on the fly. When an approach doesn't succeed, the human can switch its approach, or context that it is looking at the task with, on the fly, to attempt to successfully complete the task. We want to match this type of behavior with a neural network. A model should be able to switch its context on the fly (dynamically) while training and testing, where tasks are randomly cycled through and given to the model.
