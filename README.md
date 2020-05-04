@@ -6,6 +6,9 @@
 #
 #### Ntask learning was previously acomplished with reinforcement learning. Here we are performing Ntask learning with supervised learning which requires new approaches for dynamic training and dynamic testing
 
+#
+#### We are also using non-observable tasks (inputs for every task are identical)
+#### Logic gates alsways have the same 4 inputs, no matter what the gate is.
 
 # There are 2 significant files:
 # 1. Context_Layer.py : 
