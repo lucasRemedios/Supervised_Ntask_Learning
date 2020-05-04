@@ -1,5 +1,5 @@
 # Supervised_Ntask_Learning 
-### The primary contribution is the NTask Keras layer in Context_Layer.py 
+### The primary contribution is the NTask Keras layer in Context_Layer.py which allows easy implmentation on Ntask learning.
 #
 
 # Motivation:
