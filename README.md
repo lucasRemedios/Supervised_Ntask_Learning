@@ -73,5 +73,5 @@
    
 - maybe testing was implemented incorrectly
 
-# NOTE: Errors are unlikely within the layer itself. They are most likely in testing algorithm.
+# NOTE: Errors are unlikely within the layer itself. They are most likely in the testing algorithm.
 
