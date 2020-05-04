@@ -8,7 +8,7 @@
 
 #
 #### We are also using non-observable tasks (inputs for every task are identical)
-#### Logic gates alsways have the same 4 inputs, no matter what the gate is.
+#### Logic gates always have the same 4 inputs, no matter what the gate is. Nothing about these inputs cues gate task should be performed.
 
 # There are 2 significant files:
 # 1. Context_Layer.py : 
