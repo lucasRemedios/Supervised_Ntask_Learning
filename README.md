@@ -33,6 +33,7 @@
 ### 1) Dynamic testing 
 ### 2) Dynamic training
 ### 3) Dynamic testing
+### 4) Produce graph like that in the Graphs folder
 #
 # B. Where it stands currently: 
 ### Issues with the dynamic testing
@@ -44,19 +45,19 @@
 #
 # Once the logic gate experiment can perform the steps listed in section A. 
 #### the experiment should be repeated with n mnist task variants (ex: is it odd, is it even, div by 3, div by 5, etc)
-# The model is capable of learning these mappings as seen in the experiment in the MNIST folder, but this is not dynamic training -- the model is forced to learn task 0 on context 0, task 1 on context 1, etc.
+#### The model is capable of learning these mappings as seen in the experiment in the MNIST folder, but this is not dynamic training -- the model is forced to learn task 0 on context 0, task 1 on context 1, etc.
 
 # 
 # Examples of desired graphs at the end of these experiments can be seen in the Graphs folder
 
 #
-# Picture / Math to help understand training algorithm ie the train() function in logic_gate_experiment.ipynb can be found in Algo folder.
+### Picture / Math to help understand training algorithm ie the train() function in logic_gate_experiment.ipynb can be found in Algo folder.
 #### The variable names are mostly abbreviations of names from the code. ex. ael -> avg_epoch_loss etc.
 #### **** Mainly this is very useful for understanding the control flow of the train() function
 
 
 #
-# # *** Where might errors lie?
+# *** Where might errors lie?
 - maybe in the diff_errs and moving_avg_context_loss
     - this is a kind of thresholding system, which may work for training but not work for testing
     - potentially, with the existing code, if the model was trained better, it could be overfit to each of the 8 tasks which would hopefully allow it to switch faster and stay on the correct context
@@ -64,7 +65,7 @@
 - maybe an issue with sharing or not sharing global variables between training and testing (ex: diff_errs, moving_avg_context_loss, etc.)
     - these maybe could be thought of as "learned weights" and are getting shared incorrectly or reset etc before testing.
     
-- maybe the model needs to be trained better
+- maybe the model needs to be trained better and everything is fine as is
 
 - maybe there is a better way to trigger task switching and perseverating
    
