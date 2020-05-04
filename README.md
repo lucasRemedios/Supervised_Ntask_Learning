@@ -14,6 +14,10 @@
 # Instructions:
 #
 ### Install requirements from requirements.txt
+#### Requirements are pretty standard, numpy, etc. probably don't need all the things in this file
+#### Definitely don't use TensorFlow 2, as it didn't work with the Context layer when I tried it around Dec 2019.
+#### TensorFlow 1.15 works
+
 #
 ### Run logic_gate_experiment.ipynb. -- issues with experiment are noted in this file
 
