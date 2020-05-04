@@ -1,5 +1,5 @@
 # Supervised_Ntask_Learning 
-### The primary contribution is the NTask Keras layer in Context_Layer.py which allows easy implmentation on Ntask learning.
+### The primary contribution is the NTask Keras layer in Context_Layer.py which allows easy implementation of Ntask learning.
 #
 
 # Motivation:
@@ -59,7 +59,7 @@
 
 
 #
-# *** Where might errors lie?
+# *** Where might experiment errors lie?
 - maybe in the diff_errs and moving_avg_context_loss
     - this is a kind of thresholding system, which may work for training but not work for testing
     - potentially, with the existing code, if the model was trained better, it could be overfit to each of the 8 tasks which would hopefully allow it to switch faster and stay on the correct context
@@ -72,4 +72,6 @@
 - maybe there is a better way to trigger task switching and perseverating
    
 - maybe testing was implemented incorrectly
+
+# NOTE: Errors are unlikely within the layer itself. They are most likely in testing algorithm.
 
